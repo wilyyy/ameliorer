@@ -4,7 +4,7 @@ import Head from 'next/head';
 
 function MyApp({ Component, pageProps }: AppProps) {
    return (
-      <>
+      <div className="font-raleway">
          <Head>
             <title>Ameliorer | To Improve</title>
             <meta
@@ -23,7 +23,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             />
          </Head>
          <Component {...pageProps} />
-      </>
+      </div>
    );
 }
 

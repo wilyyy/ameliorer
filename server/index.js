@@ -1,8 +1,13 @@
 const cors = require("cors");
 const express = require("express");
 const app = express();
+const { ConnectToDb } = require("./mongoConnector");
 
+//---Import end ---//
 const port = 4000;
+
+//Connect to DB
+ConnectToDb();
 
 app.use(cors());
 app.use(express.json());

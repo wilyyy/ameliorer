@@ -6,7 +6,7 @@ interface Props {
    text: string;
 }
 
-export default function Button({ text }: Props): JSX.Element {
+export default function Button({ text = 'Click Me' }: Props): JSX.Element {
    return (
       <motion.button
          whileHover={HoverZoom.hover}

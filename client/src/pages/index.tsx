@@ -1,6 +1,6 @@
 import type { NextPage } from 'next';
 import Image from 'next/image';
-import ButtonTest from '../components/Button';
+import Button from '../components/Button';
 
 const Home: NextPage = () => {
    return (
@@ -11,7 +11,7 @@ const Home: NextPage = () => {
                verb &middot; to improve
             </p>
          </div>
-         <ButtonTest text="Click Me" />
+         <Button text="Begin" />
       </div>
    );
 };

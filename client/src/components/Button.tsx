@@ -12,7 +12,7 @@ export default function Button({ text }: Props): JSX.Element {
          whileHover={HoverZoom.hover}
          whileTap={HoverZoom.tap}
          transition={HoverZoom.spring}
-         className="bg-apricot hover:bg-blue-700 text-msuGreen font-bold py-2 px-4 rounded"
+         className="bg-apricot hover:bg-blue-700 text-msuGreen font-bold py-2 px-4 rounded w-1/6"
       >
          {text}
       </motion.button>

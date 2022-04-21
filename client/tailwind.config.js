@@ -6,7 +6,12 @@ module.exports = {
    ],
    darkMode: false, // or 'media' or 'class'
    theme: {
-      extend: {},
+      extend: {
+         fontFamily: {
+            raleway: ['Raleway', 'sans-serif'],
+            playfair: ['Playfair Display', 'serif'],
+         },
+      },
       colors: {
          transparent: 'transparent',
          current: 'currentColor',

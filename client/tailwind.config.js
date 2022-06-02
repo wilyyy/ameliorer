@@ -18,6 +18,7 @@ module.exports = {
          msuGreen: '#00463C',
          apricot: '#FFC987',
          white: '#fff',
+         black: '#000',
       },
    },
    variants: {

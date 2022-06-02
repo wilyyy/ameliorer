@@ -1,19 +1,18 @@
 import type { NextPage } from 'next';
 import { motion } from 'framer-motion';
 import { HoverZoom } from '../utils/Animations';
+import { useRouter } from 'next/router';
 import Image from 'next/image';
 import Button from '../components/Button';
 
 const Home: NextPage = () => {
+   const router = useRouter();
+
    return (
       <div className="font-raleway w-screen h-screen flex flex-col justify-evenly items-center bg-msuGreen text-white">
-         <div className="flex flex-col justify-between items-center w-1/3 h-[150px]">
-            <p className="font-playfair text-6xl text-apricot font-extrabold">
-               Ameliorer
-            </p>
-            <p className="font-playfair text-2xl text-apricot">
-               verb &middot; to improve
-            </p>
+         <div className="font-playfair flex flex-col justify-between items-center w-1/3 h-[150px]">
+            <p className="text-6xl text-apricot font-extrabold">Ameliorer</p>
+            <p className="text-2xl text-apricot">verb &middot; to improve</p>
          </div>
          <p className="w-2/3 text-center">
             Learn English to French translations with flashcards using SM-2
@@ -30,7 +29,7 @@ const Home: NextPage = () => {
          >
             Click here to view source code.
          </motion.a>
-         <Button text="Begin" />
+         <Button text="Begin" onButtonClick={() => router.push('/dashboard')} />
       </div>
    );
 };

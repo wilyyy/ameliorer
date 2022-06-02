@@ -22,7 +22,9 @@ function MyApp({ Component, pageProps }: AppProps) {
                rel="stylesheet"
             />
          </Head>
-         <Component {...pageProps} />
+         <div className="text-white font-playfair">
+            <Component {...pageProps} />
+         </div>
       </div>
    );
 }
